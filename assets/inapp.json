@@ -582,5 +582,25 @@
   "UserSearch_Label": {
     "name": "UserSearch Label",
     "description": "You can choose a name/label for the users that can be searched. Consider co-authors, speakers, or other labels suitable to your form field."
+  },
+  "UserSearch_ManuallyAdded": {
+    "name": "Manually added users",
+    "description": "You can allow users to add users who do not exist in the database. This will not create the user in the database, but instead just store this temporary user-entry in this field only. If you intend to use this field e.g. to convert to speakers, then your administrators must replace each manually created user with a valid user who exists in the database."
+  },
+  "AttachmentField_AllowedFiles": {
+    "name": "Permitted file types",
+    "description": "You can restrict which types of files the user can upload and attach to this field."
+  },
+  "AttachmentField_MultipleFiles": {
+    "name": "Multiple attachmens/files",
+    "description": "You can allow the submitter to upload/select multiple files/attachments. You can then restrict how many files/attachments can be selected."
+  },
+  "AttachmentField_Filename": {
+    "name": "Customize Filename",
+    "description": "By default, submitters can change the filesnames of the attachments they uploaded/selected. If you disable this then the files/attachments will have the same filename as the file that was uploaded."
+  },
+  "Impexium_ProfileCustom": {
+    "name": "Impexium Profile Custom Field",
+    "description": "You can choose any custom field to be pulled into the form. Use the 'Field Name' as listed under the 'Customizations' > 'Custom Forms' > 'Custom Fields' listing in Impexium",
   }
 }
