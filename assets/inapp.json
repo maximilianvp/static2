@@ -43,14 +43,6 @@
     "description": "This setting controls how submissions that require a review get assigned to a reviewer as a request to review. Configure how reviews are allocated to the reviewer pool. When a new submission arrives, it can either remain unassigned (manual, so that you can manually assign it) or automatically be assigned to one reviewer from the pool, either randomly, to the reviewer with the least number of outstanding reviews (queue) or to the reviewer who our machine learning algorithm determines has the shortest expected review completion time.",
     "name": "Reviewer Allocation"
   },
-  "Call_Configuration_ReviewerAllocationPool": {
-    "description": "Select or create group of users among who will be chosen who will be assigned as the reviewer for each new submission. This will be selected according to the Review Allocation mechanism, and is disabled for manual allocation.",
-    "name": "Reviewer Pool"
-  },
-  "Call_Configuration_ReviewerPool": {
-    "description": "Select or create group of users among who will be chosen who will be assigned as the reviewer for each new submission. This will be selected according to the Review Allocation mechanism, and is disabled for manual allocation.",
-    "name": "Reviewer Pool"
-  },
   "Call_Configuration_ReviewPrivacy": {
     "description": "To minimize bias, it may be necessary to conceal identity or certain information about the submitter from reviewers. This setting controls the level of privacy",
     "name": "Review Privacy"
@@ -251,21 +243,9 @@
     "description": "Set the end date till which the users will be permitted to claim.",
     "name": "Program End Date"
   },
-  "EducationProgram_ExternalId": {
-    "description": "Unique identifier for the event on Impexium. Required for validating access restrictions on Program and Claim Items.",
-    "name": "Program ExternalId"
-  },
   "EducationProgram_FeedbackTemplate": {
     "description": "Set the feedback template the user has to fill out in order to complete their claim.",
     "name": "Feedback Template"
-  },
-  "EducationProgram_Filtering": {
-    "description": "Specify criteria on which programs will be shown.",
-    "name": "Filtering Programs"
-  },
-  "EducationProgram_Item_Credit_Provider": {
-    "description": "Select a provider and the amount of credits that can be claimed.",
-    "name": "Provider"
   },
   "EducationProgram_Item_Credits": {
     "description": "The list of credits that can be claimed from this item.",
@@ -350,10 +330,6 @@
   "EducationProgram_SubmitBehavior": {
     "description": "Defines when the claims will be submited. Either immediately after claiming or by manually clicking on submit claims.",
     "name": "Submit Behavior"
-  },
-  "EducationProgram_Type": {
-    "description": "A program can be of type custom or of type session. If the type is session then this program has been generated using sessions in event.",
-    "name": "Program Type"
   },
   "EducationProgram_UseRatables": {
     "description": "Enabling this will allow us to add a list of ratables which the claiming user would have to fill out in order to complete their claim.",
