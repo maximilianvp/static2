@@ -1,606 +1,662 @@
 {
-  "Call_General": {
-    "name": "Calll",
-    "description": "A call is a generic term for an invitation to submit content. Usually, content is collected in a Submission Phase and reviewed afterwards in a Review Phase by a group of reviewers."
-  },
-  "Call_Configuration_HeaderImage": {
-    "name": "Header / Banner Image",
-    "description": "Upload a banner image file that you want to appear in your call page. Best dimensions are 4x1 (WxH), e.g. w1600 x h400."
-  },
-  "Call_Configuration_Communication": {
-    "name": "Communication / Notifications",
-    "description": "Updates in the system can trigger notifications to reviewers and submitters. Configure how frequently these notifications should be delivered."
-  },
-  "Call_Configuration_ReviewPrivacy": {
-    "name": "Review Privacy",
-    "description": "To minimize bias, it may be necessary to conceal identity or certain information about the submitter from reviewers. This setting controls the level of privacy"
-  },
-  "Call_Configuration_ReviewerAllocation": {
-    "name": "Reviewer Allocation",
-    "description": "This setting controls how submissions that require a review get assigned to a reviewer as a request to review. Configure how reviews are allocated to the reviewer pool. When a new submission arrives, it can either remain unassigned (manual, so that you can manually assign it) or automatically be assigned to one reviewer from the pool, either randomly, to the reviewer with the least number of outstanding reviews (queue) or to the reviewer who our machine learning algorithm determines has the shortest expected review completion time."
-  },
-  "Call_Configuration_ReviewerAllocationPool": {
-    "name": "Reviewer Pool",
-    "description": "Select or create group of users among who will be chosen who will be assigned as the reviewer for each new submission. This will be selected according to the Review Allocation mechanism, and is disabled for manual allocation."
-  },
-  "Call_Configuration_ReviewerPool": {
-    "name": "Reviewer Pool",
-    "description": "Select or create group of users among who will be chosen who will be assigned as the reviewer for each new submission. This will be selected according to the Review Allocation mechanism, and is disabled for manual allocation."
-  },
-  "Call_Attribute_Name": {
-    "name": "Call Name",
-    "description": "This is the name of the call that will be seen by everyone—submitters, reviewers, administrators, and the public."
-  },
-  "Call_Attribute_Introduction": {
-    "name": "Call Introduction",
-    "description": "The introduction to a call will appear together with the Call Name on the Call Detail page. Edit this introduction to address all prospective submitters—and include information about the call, guidelines, and submission instructions."
-  },
-  "Call_Configuration_Timezone": {
-    "name": "Call Timezone",
-    "description": "Choose the time zone of the location for the call. This will ensure the times you specify as deadlines will be enforced in this timezone."
-  },
-  "Call_Refetch_ServerFields": {
-    "name": "Re-fetch server fields",
-    "description": "Clicking this button re-fetches all serverfields of all submissions in this call, and updates them to their new value. \n  This change can't be undone"
-  },
-  "CallPhases_General": {
-    "name": "Call Phases",
-    "description": "As an administrator, you can add submission and review phases to handle submissions to a call. Add at least one submission phase to receive submissions to the call. Also, add at least one review phase for reviewing submissions. Be sure to set the Times for each phase such that no phase overlaps any other. If care isn’t taken to avoid this, then submitters might submit to the wrong phase."
-  },
-  "CallPhases_Times": {
-    "name": "Times",
-    "description": "Set the start and end date of this phase. If you are establishing multiple phases, ensure that that there are no two submission phases that have overlapping dates (review phases may overlap)"
-  },
-  "CallPhases_SubmissionForm": {
-    "name": "Submission Form",
-    "description": "Create the form for this submission phase. Add sections to the form and configure each section with fields, options and other features."
-  },
-  "CallPhases_SubmissionSettings_Group": {
-    "name": "Who can submit?",
-    "description": "Set the access restrictions for types of users who can submit into this phase. A variety of different types of restrictions are available."
-  },
-  "CallPhases_SubmissionSettings_NameGeneration": {
-    "name": "Submission Name",
-    "description": " Specify the scheme for identifying each submission to this phase. Choose from running numbers, colors, a random number, or the contents of a field in the submission form."
-  },
-  "CallPhases_SubmissionSettings_AllowWithdrawal": {
-    "name": "Allow Submission Withdrawal",
-    "description": "Indicate here whether you will accept the withdrawal of a submission. The setting you choose here applies to all submitters to this phase."
-  },
-  "CallPhases_ReviewForm": {
-    "name": "Review Form",
-    "description": "Create the form for this review phase. Add sections to the form and configure each section with fields, options and other features."
-  },
-  "CallPhases_ReviewSettings_Group": {
-    "name": "Reviewer Group",
-    "description": "Set the access restrictions for types of users who can review submissions in this phase."
-  },
-  "FormEditor_Forms": {
-    "name": "Forms",
-    "description": "Create forms to be used in the template."
-  },
-  "FormEditor_Sections": {
-    "name": "Form Section",
-    "description": "A section is a visual distinction between fields and has a name that will be rendered at the beginning of the section."
-  },
-  "FormEditor_SectionName": {
-    "name": "Form Section name",
-    "description": "name that will be rendered at the top of each section."
-  },
-  "FormEditor_Fields": {
-    "name": "Form Field",
-    "description": "A field is what the user who fills out the form will fill in, e.g. a text field. Each field has a name and several options, some of which are related to the field-type, others are generic (e.g. whether the field is optional)"
-  },
-  "FormEditor_FieldName": {
-    "name": "Field Label",
-    "description": "The label that will be displayed on each field."
-  },
-  "FormEditor_FieldOptional": {
-    "name": "Optional Field",
-    "description": "The field is not required to be filled out."
-  },
-  "FormEditor_FieldIsPrivateSubmission": {
-    "name": "Invisible field to submitter",
-    "description": "Use this option to indicate that a certain field is invisible to the user filling out the form."
-  },
-  "FormEditor_FieldIsPrivateReviewBlind": {
-    "name": "Invisible field during blind review",
-    "description": "The value captured from the submitter will not be displayed to the reviewer if this option is checked, AND the review settings are set to Blind Review."
-  },
-  "FormEditor_FieldIsPrivateReview": {
-    "name": "Invisible field during review",
-    "description": "The value captured from the submitter will not be displayed to the reviewer if this option is checked."
-  },
-  "FormEditor_FieldSkipLogic": {
-    "name": "Skip Logic",
-    "description": "Mark certain fields on the form as only visible/required if selected options of the Skip Logic Field are chosen. E.g. a dropdown for “category” could mark follow-up questions to each category as only required if the respective category was selected first and hide the irrelevant follow-up questions otherwise."
-  },
-  "CallPhases_PhaseDependencies": {
-    "name": "Phase Dependencies",
-    "description": "Phases in a template follow a certain structure. There can be an arbitrary number of submission phases, and each submission phase can have review phases that depend on it."
-  },
-  "UserGroups_General": {
-    "name": "User Groups",
-    "description": "Users in the system can be grouped, and those groups can be given a name. When configuring a call, you can search through user groups and find the group that you created as the reviewer group for that particular call, or add a restriction to only allow submissions from such a group."
-  },
-  "Review_CannotReviewRightNow": {
-    "name": "No Review Required",
-    "description": "At this point there is no review required from you - Please ensure you are accessing the correct submission to review, and that the review phase is currently active."
-  },
-  "Submission_Message_To_Submitter": {
-    "name": "Bulk Message to Submitters",
-    "description": "Select the users you would like to send a bulk message to. In the dialog you can configure subject and message body to be sent."
-  },
-  "Submission_Tags": {
-    "name": "Tagging Submissions",
-    "description": "Tags are categories you can assign to submissions, either in bulk or individually. No need to define which categories you need, simply create a new tag on the fly. Fully utilize the power of tags by building custom views to filter for only certain tags."
-  },
-  "Jobs_Introduction": {
-    "name": "Jobs",
-    "description": "Jobs are an advanced feature that allow monitoring and controlling long-running tasks. Contact support for further details."
-  },
-  "SubmissionNotAllowed": {
-    "name": "Cannot submit right now",
-    "description": "You cannot make a submission to this call at this time. The administrator has configured that only certain accounts are able to submit during certain times. It appears the account you're submitting from doesn't meet those criteria. We recommend you get in touch with the call administrator directly if further clarification is required."
-  },
-  "Call_CommitteeSelection": {
-    "name": "Committe Selection Call",
-    "description": "The Committe Selection Call has a custom template"
-  },
-  "StatusMessage_Submission_Not_Found": {
-    "name": "Submission Not Found",
-    "description": "We could not find the submission you are trying to view. Double-check the link/url and try again."
-  },
-  "StatusMessage_Review_Not_Found": {
-    "name": "Review Not Found",
-    "description": "We could not find the review you are trying to view. Double-check the link/url and try again."
-  },
-  "StatusMessage_Review_Error": {
-    "name": "Review Error",
-    "description": "Our servers weren't able to obtain the requested review. This is most likely to be an error in our servers, and we recommend you get in touch with support."
-  },
-  "StatusMessage_PageNotFound404": {
-    "name": "Not Found",
-    "description": "The page you requested to view doesn't exist, or has been moved or deleted. Double-check the link/url and try again."
-  },
-  "CallPhases_SubmissionSettings_AlwaysBCC": {
-    "name": "Email Blind Copy",
-    "description": "Check this box to blind/bcc-copy specific e-mail addresses for any event happening in this phase. In the field, separate each email address with a comma. Whoever receives the original notification will not know that these email addresses also received the notification."
-  },
-  "CallPhases_SubmissionSettings_MaxSubmissions": {
-    "name": "Maximum Number of Submissions per Submitter",
-    "description": "Set the maximum number of submissions that you will allow for a single submitter."
-  },
-  "CallPhases_SubmissionSettings_Restrictions_RegularExpression": {
-    "name": "Regular Expression",
-    "description": "Use a regular expression to describe a restriction on a property. Learn how to build regular expressions using e.g. https://regexone.com"
-  },
-  "CallPhases_ReviewSettings_EventCommunication": {
-    "name": "Event Communication / Notifications",
-    "description": "Updates in the system can trigger notifications to administrators, reviewers, and submitters. The administrator can configure the frequency of these notifications."
-  },
-  "CallPhases_ReviewSettings_AlwaysBCC": {
-    "name": "Email Blind Copy",
-    "description": "Check this box to blind/bcc-copy specific e-mail addresses for any event happening in this phase. In the field, separate each email address with a comma. Whoever receives the original notification will not know that these email addresses also received the notification."
-  },
-  "CallPhases_PaymentOption": {
-    "name": "Require Payment ot Submit",
-    "description": "Configure to enforce that to make a submission a payment has to be made. Select the payment processor to use (e.g. Impexium, or Stripe) and which product should be used to process the payment."
-  },
-  "CallPhases_Messaging_Enable": {
-    "name": "Enable Inapp Messaging",
-    "description": "Checking this enables inapp messaging between admins, submitters and/or reviewers."
-  },
-  "CallPhases_Messaging_Roles": {
-    "name": "Add roles to channel",
-    "description": "Select which user roles are automatically added to a channel as members."
-  },
-  "Grant_CopyTemplates": {
-    "name": "Copy the templates of the grant",
-    "description": "Not copying the templates will link the copy to the original - Changing forms in the copy will modify the original, and vice versa. We recommend you disconnect the copy from the original (by copying the templates), but if you'd like to keep the templates linked up, uncheck the \"Copy templates\" box."
-  },
-  "Grant_Message_Template_AlwaysBCC": {
-    "name": "Email Blind Copy",
-    "description": "Check this box to blind/bcc-copy specific e-mail addresses for any event happening in this grant. In the field, separate each email address with a comma. Whoever receives the original notification will not know that these email addresses also received the notification."
-  },
-  "Mail_EventTypes": {
-    "name": "Notification Events",
-    "description": "Some events are configurable to send a notification message when the event occurs. Choose which event applies to this message template."
-  },
-  "Mail_Placeholders": {
-    "name": "Placeholders",
-    "description": "Define custom content for any of notifications that are sent for the event type chosen in the drop-down. These placeholders help you to mention specific aspects of the event, call, organization, submission, or recipient name (reviewer name)."
-  },
-  "Mail_Subject": {
-    "name": "Subject",
-    "description": "Much like the subject of an email message. Enter the subject of the notification that will be sent to the recipient."
-  },
-  "Mail_Content": {
-    "name": "Content",
-    "description": "Enter the main content of the message in the rich-text editor."
-  },
-  "Query_CustomView": {
-    "name": "Custom View",
-    "description": "Customize a view to suit your needs and customize both the filters and the result fields. Custom views can be saved, shared and exported."
-  },
-  "Query_ResultFields": {
-    "name": "Result Fields",
-    "description": "Customize which columns will be displayed and included in the export. Choose from all fields in the submission form, review form, and a variety of system provided fields such as “Review Score” and “Tags”."
-  },
-  "Query_FilterCriteria": {
-    "name": "Filter Criteria",
-    "description": "Add filters to your query, that limit the results it retrieves to only include those who match. Choose from all fields in the submission form, review form, and a variety of system provided fields such as “Review Score” and “Tags”."
-  },
-  "Query_LoadView": {
-    "name": "Saving and Loading a Custom View",
-    "description": "Save a custom view so that you can later load it again. Use this feature to maintain a variety of different views and load them when required."
-  },
-  "Query_Share": {
-    "name": "Sharing a Custom View",
-    "description": "A custom view can be shared with your colleagues. Upon sharing, they will find the view in the 'Load View' list."
-  },
-  "Query_Default": {
-    "name": "Default View",
-    "description": "Mark a custom view as default for a call to automatically load it when viewing the list of submission in the call."
-  },
-  "Query_Export": {
-    "name": "Exporting",
-    "description": "You may “Export” or “Export All” the submissions you are currently viewing (including the Filter Criteria and Result Fields as configured in the Custom View). Export All allows a seamless export if there are more than 50 submissions."
-  },
-  "Review_Assignment": {
-    "name": "Modify Submission Reviewer",
-    "description": "On each submission, or in bulk, configure who is assigned to review a submission. Search the user database to find the reviewer. You can remove an existing reviewer who hasn’t completed their assignment."
-  },
-  "Submission_Status": {
-    "name": "Accept/Reject Submission",
-    "description": "Submissions have states: Open (default), Accepted and Rejected. These are not visible to the submitter or reviewer and trigger no notifications in the system. They can be changed back to Open or otherwise at any time. You may filter for the status."
-  },
-  "Submission_Phase": {
-    "name": "Manage call phase",
-    "description": "In a configuration where multiple review phases overlap, the admin controls in which phase a submission is. To trigger e.g. a “Senior Review”, the admin moves the submission to the “Senior Review” phase."
-  },
-  "Submission_ReviewImport": {
-    "name": "Importing Reviews",
-    "description": "In an environment where no stable internet connection is available, reviews may be conducted offline. You can generate a template, take this in Excel and fill out offline, then import it later to apply the reviews."
-  },
-  "Submission_BulkActions": {
-    "name": "Bulk Actions",
-    "description": "Select multiple submissions to apply certain actions to all selected. You may choose to tag, accept/reject or modify the review assignment or call phase. In addition the following actions are available only as bulk-actions: Sending a message to selected submission authors, and importing reviews; In an environment where no stable internet connection is available, reviews may be conducted offline. You can generate a template, take this in Excel and fill out offline, then import it later to apply the reviews."
-  },
-  "FormEditor_limited": {
-    "name": "FormEditor limited editing",
-    "description": "Submissions have been recieved for this form, you can only change the labels of the fields and static text"
-  },
-  "AuthorRoles": {
-    "name": "Print author roles",
-    "description": "Checking this causes primary authors to be printed with an asterisk(*)"
-  },
-  "SubscribeCalendar": {
-    "name": "How to subscribe to your appointments ",
-    "description": "On this tab you can additionally export your appointment data into an external calendar e.g. Google/Outlook Calendar or even on your phone. To do this:\n\n\nOn the top-left corner of this page click Subscribe Calendar.\nCopy the URL link displayed.\nIn an external calendar of your choice (e.g. Google Calendar) find the option to Add a New Calendar using URL.\nPaste your copied URL from Slayte into this space provided to paste a new calendar URL.\nSave changes."
-  },
-  "Grant_SpecifyEachPayment": {
-    "name": "Specify Each Payment",
-    "description": "By default, Slayte creates and calculates the amount of each payment based on duration and amount which you enter when accepting an awardee.\nIf you'd like more control, select \"Specify each payment\" -  Then you create exactly the template with payment-events for an awardee, and when accepting the awardee we compute the value of each payment event created by you (also based on sponsoring amount and duration). You may add template payment events with percentage- or total-amount which will turn into those calculated payment-events on the awardee profile when accepted."
-  },
-  "Grant_EventTemplate": {
-    "name": "Event Template",
-    "description": "Configure the default events to be created for an awardee. When marked as \"active\" Slayte will create all those events configured here on that awardee's profile, in reference to the information provided when marked active (such as payment amount, sponsoring duration etc.).\nNote: To specify each payment template-event individually the option \"Specify each payment\" needs to be enabled. Otherwise, the payment events will be created all-in-one when the awardee is marked active depending on your configuration then."
-  },
-  "Competition_CloselyScheduledCompetitors": {
-    "name": "Closely Scheduled Competitors",
-    "description": "Below are listed all competitors across all non-closed competitions whose assigned performance timeslot has a difference to another performance-timeslot of its duration or less."
-  },
-  "Component_DatePicker": {
-    "name": "Date Picker",
-    "description": "Pick a date by navigating back and forth and clicking on the date of choice. You can also directly enter the date using your keyboard - Simply type the date in the format 'MMM D, YYY', e.g. Apr 4, 1985. See below:\n[img height=447 width=561]http://support-static.slayte.com/component-datepicker-format.gif[/img]"
-  },
-  "Component_DateRangePicker": {
-    "name": "Date Range Picker",
-    "description": "Pick two dates, begin- and end-date, by navigating back and forth and clicking on the dates of choice. You can also directly enter the dates using your keyboard - Simply type the date in the format 'MMM D, YYY', e.g. Sep 1, 1985. See below:\n[img height=451 width=564]http://support-static.slayte.com/component-daterangepicker-format.gif[/img]"
-  },
-  "Report_Sharing": {
-    "name": "Sharing a Custom Report",
-    "description": "A custom report can be shared with your colleagues. Upon sharing, they will find the report in the 'Load Report' list."
-  },
-  "Report_Group_Default": {
-    "name": "Default Report",
-    "description": "Mark a custom report as default for a call to automatically load it when viewing the list of reports in the call."
-  },
-  "SuperAdmin_PolicySetting": {
-    "name": "Policy setting",
-    "description": "When a user logs in and they have not previously approved a policy you created, then they will be prompted to do so. Use this for privacy/terms or dealing with Cookies and GDPR."
-  },
-  "Mail_Introduction": {
-    "name": "Mail Introduction",
-    "description": "Use Message Templates to build custom and re-usable messages with mail-merge placeholders. Each Message Template is built for a specific type of event, e.g. \"Submission Received\", which sets the available placeholders."
-  },
   "Admin_ConciseStyle": {
-    "name": "Admin Concise Style",
-    "description": "Using concise style will compress the layout of the Submission Form and reduce overall spacing."
-  },
-  "Event_Template_Selection_Mode": {
-    "name": "Template Selection Mode",
-    "description": "Choose a template selection mode. 'Copy' makes a new copy of the selected template (any edits made to the copied template will not reflect on the original), 'Link' will reuse a previously made template (any changes made to the template will be reflected in all other events using the template as well)."
-  },
-  "EducationProgram_VerificationPassingScore": {
-    "name": "Verification Passing Score",
-    "description": "Set the percentage which the claimer has to pass in order to claim."
-  },
-  "EducationProgram_Name": {
-    "name": "Program Name",
-    "description": "Choose a name by which this program will be identified."
-  },
-  "EducationProgram_Type": {
-    "name": "Program Type",
-    "description": "A program can be of type custom or of type session. If the type is session then this program has been generated using sessions in event."
-  },
-  "EducationProgram_Category": {
-    "name": "Program Category",
-    "description": "Assign a category to the program. The category is important since it can be used to filter programs and also groups the programs for the claimer."
-  },
-  "EducationProgram_BeginDate": {
-    "name": "Program Begin Date",
-    "description": "Set the start date from which the users should be permitted to claim."
-  },
-  "EducationProgram_EndDate": {
-    "name": "Program End Date",
-    "description": "Set the end date till which the users will be permitted to claim."
-  },
-  "EducationProgram_SubmitBehavior": {
-    "name": "Submit Behavior",
-    "description": "Defines when the claims will be submited. Either immediately after claiming or by manually clicking on submit claims."
-  },
-  "EducationProgram_SubmitActions": {
-    "name": "Submit Actions",
-    "description": "Submit Actions can be used to perform some external action once a claim is submitted (e.g we can configure a submit action to grant credits in Impexium once a claim is submitted)."
-  },
-  "EducationProgram_UseUsers": {
-    "name": "Use Users",
-    "description": "Enabling this will allow us to add a list of users and a template which the claiming user would have to fill out for each of these users in order to complete their claim."
-  },
-  "EducationProgram_UsersLabel": {
-    "name": "Users Label",
-    "description": "This label will be used to refer to the users list wherever it's being displayed."
-  },
-  "EducationProgram_UseRatables": {
-    "name": "Use Ratables",
-    "description": "Enabling this will allow us to add a list of ratables which the claiming user would have to fill out in order to complete their claim."
-  },
-  "EducationProgram_RatablesLabel": {
-    "name": "Ratables Label",
-    "description": "This label will be used to refer to the ratables list wherever it's being displayed."
-  },
-  "EducationProgram_RatablesScale": {
-    "name": "Ratables Scale",
-    "description": "All ratables can have a value from and to the selected values here."
-  },
-  "EducationProgram_Status": {
-    "name": "Status",
-    "description": "Describes the status of the program."
-  },
-  "EducationProgram_UseVerification": {
-    "name": "Use Verification",
-    "description": "Enabling this will allow us to add a template which the claiming user would have to fill out with the correct answers in order to complete their claim."
-  },
-  "EducationProgram_VerificationMaxAttempts": {
-    "name": "Verification Max Attempts",
-    "description": "Specifies the maximum number of attempts the user has to provide the correct answers for the verification template."
-  },
-  "EducationProgram_VerificationPassingScore": {
-    "name": "Verification Passing Score",
-    "description": "Set the percentage of correct answers the user has to provide for the verification template in order to claim."
-  },
-  "EducationProgram_FeedbackTemplate": {
-    "name": "Feedback Template",
-    "description": "Set the feedback template the user has to fill out in order to complete their claim."
-  },
-  "EducationProgram_SpeakerTemplate": {
-    "name": "Speaker Template",
-    "description": "Set the users template the claiming user has to fill out for each user in the users list in order to complete their claim."
-  },
-  "EducationProgram_ProviderCertificateOverrides": {
-    "name": "Provider Certificate Overrides",
-    "description": "Override the default certificate template for provider(s) in this program."
-  },
-  "EducationProgram_UserRestrictions": {
-    "name": "User Restrictions",
-    "description": "Specify restrictions for which users are allowed to claim from this program and it's associated claim items."
-  },
-  "EducationProgram_Action_ActionType": {
-    "name": "Action Type",
-    "description": "Specify the action type that will be performed once a claim is submitted."
-  },
-  "EducationProgram_Item_Name": {
-    "name": "Name",
-    "description": "Specify the name of the Program Item."
-  },
-  "EducationProgram_Item_Credits": {
-    "name": "Credits",
-    "description": "The list of credits that can be claimed from this item."
-  },
-  "EducationProgram_Item_Credit_Provider": {
-    "name": "Provider",
-    "description": "Select a provider and the amount of credits that can be claimed."
-  },
-  "EducationProgram_Item_Ratables": {
-    "name": "Ratables",
-    "description": "The list of ratables for which the claiming user can provide a rating."
-  },
-  "EducationProgram_Item_Users": {
-    "name": "Users",
-    "description": "The list of users for which the claiming user has to fill out the users template in order to complete the claim."
-  },
-  "EducationProvider_Name": {
-    "name": "Name",
-    "description": "Specify the provider name."
-  },
-  "EducationProvider_CreditName": {
-    "name": "CreditName",
-    "description": "Specify the provider credit name."
-  },
-  "EducationProvider_CertificateTemplate": {
-    "name": "CertificateTemplate",
-    "description": "Specify the certificate template for the provider."
-  },
-  "EducationProvider_ProfileFields": {
-    "name": "ProfileFields",
-    "description": "The list of profile fields for this provider that the user has to fill out in order to submit their claims."
-  },
-  "EducationProvider_ProfileField_PlaceholderName": {
-    "name": "PlaceholderName",
-    "description": "Specify the profile field placeholder name. This is the placeholder you will have to use in the certificate template."
-  },
-  "EducationProvider_ProfileField_FieldName": {
-    "name": "EducationProvider_FieldName",
-    "description": "Specify the profile field name. This is the field name the claimer will see when filling out their provider profile."
-  },
-  "EducationProgram_ExternalId": {
-    "name": "Program ExternalId",
-    "description": "Unique identifier for the event on Impexium. Required for validating access restrictions on Program and Claim Items."
-  },
-  "EducationProgram_Item_VerificationTemplate": {
-    "name": "Verification Template",
-    "description": "Set the template which has to be filled out by the user who is attempting to claim this item, to verify their attendance."
-  },
-  "EducationProgram_Filtering": {
-    "name": "Filtering Programs",
-    "description": "Specify criteria on which programs will be shown."
-  },
-  "EducationProgram_Status_Actions": {
-    "name": "Status Actions",
-    "description": "Status actions can be performed to change the status of the program."
-  },
-  "EducationProgram_Status_Activate": {
-    "name": "Activate Claiming",
-    "description": "Once a program has been actived the users can make claims(Additionally for the claimer to be able to claim the begin and end date must be set correct and the user must pass the restrictions)."
-  },
-  "EducationProgram_Status_Pause": {
-    "name": "Pause Claiming",
-    "description": "When a program is paused then claiming is disabled."
-  },
-  "EducationProgram_Status_Archive": {
-    "name": "Archive Program",
-    "description": "Archive a program it's not being used frequently and might be deleted in the future(After archiving delete option is enabled)."
-  },
-  "EducationProgram_Status_Unarchive": {
-    "name": "Unarchive Program",
-    "description": "Unarchiving a program returns it in a paused state where claiming hasn't been enabled(This action can be reverted)."
-  },
-  "EducationProgram_Delete": {
-    "name": "Delete Program",
-    "description": "Deleting a program is an irreversible action and will remove the program and all related data."
-  },
-  "EducationProgram_Description": {
-    "name": "Program Description",
-    "description": "Add the description that will be displayed to the claimer."
-  },
-  "EducationProgram_ClaimLabel": {
-    "name": "Claim Button Label",
-    "description": "The text set here will be displayed on the claim button."
-  },
-  "EducationProgram_ItemLabel": {
-    "name": "Item Label",
-    "description": "This label will be used to refer to the items list wherever it's being rendered."
-  },
-  "EducationProvider_PreferredCredits": {
-    "name": "Preferred Credits",
-    "description": "Select those credits that you would like to see. Note: Once at least one credit is selected, only programs that offer those selected credits will be shown."
-  },
-  "EducationProgram_Item_Description": {
-    "name": "Description",
-    "description": "Provide a description of the Program Item."
-  },
-  "EducationProgram_AdminNotificationEmails": {
-    "name": "Admin Notification Emails",
-    "description": "List of emails to be emailed about all notifications in this program."
-  },
-  "MentionInput": {
-    "name": "Placeholder Input",
-    "description": "Compose a template with placeholders that will be replaced later. Type regular text and press @ to open the list of placeholders, continue typing to narrow down your search for a placeholder. Press TAB or ENTER to select"
-  },
-  "EducationProgram_Copy_Program": {
-    "name": "Copy Program",
-    "description": "Make a copy of this program. General feedback and Speaker feedback templates will be copied(not linked). Only Program related restrictions will be copied as well. NOTE: No claimable items will be copied. "
-  },
-  "EducationProgram_Item_ExternalID": {
-    "name": "External ID",
-    "description": "An item's external ID is used to connect it to an external item, so that additional validations can be run linked to the external item, e.g. an Impexium session that must be attended by the claimer."
-  },
-  "EducationProvider_ProfileField_Required": {
-    "name": "Required Profile Field",
-    "description": "Indicate this field as required in the certificate template. Claimers will not be able to generate their certificicate until they provide this value."
-  },
-  "CallSettings_Submission_Library_Phases": {
-    "name": "Source phase",
-    "description": "Select a phase from which submissions will be added to the library"
-  },
-  "CallSettings_Submission_Library_TitleField": {
-    "name": "Submission Title",
-    "description": "Select a field that will be set as the submission's title in the submission library."
-  },
-  "CallSettings_Submission_Library_DetailFields": {
-    "name": "Submission Detail",
-    "description": "Select field(s) whose values will be displayed in submission library."
-  },
-  "CallSettings_Voting_Deadline": {
-    "name": "Deadline",
-    "description": "Set a deadline until when votes will be accepted."
-  },
-  "CallSettings_Voting_SourcePhase": {
-    "name": "Source Phase",
-    "description": "Select the phase where the submissions were collected that you'd like to collect votes for."
-  },
-  "CallSettings_Voting_TitleField": {
-    "name": "Title Field",
-    "description": "Select what submitters see as the title of the item vote for. The title will be displayed on the list, but voters can still open each submission to see the list of visible fields"
-  },
-  "CallSettings_Voting_DetailFields": {
-    "name": "Detail Fields",
-    "description": "Control which fields of the submission will be shown to the voter."
-  },
-  "CallSettings_Voting_Mechanism": {
-    "name": "Voting Mechanism",
-    "description": "Select what type of vote to collect."
-  },
-  "CallSettings_Voting_Limit": {
-    "name": "Voting Limit",
-    "description": "Set how many votes each user can cast."
-  },
-  "CallSettings_Voting_Restrictions": {
-    "name": "Voting Restrictions",
-    "description": "Add restrictions to allow only matching users to cast a vote. By default every registered user is allowed to vote."
-  },
-  "CallPhases_SubmissionSettings_EditSubmissions": {
-    "name": "Submission Edit",
-    "description": "Enable editing of all submissions in this call. Submission edit period can be limited by setting a deadline. "
-  },
-  "UserSearch_EmailLeak": {
-    "name": "UserSearch Email Search",
-    "description": "You can allow users to search by email address. Be aware that this exposes the e-mail addresses of your users"
-  },
-  "UserSearch_Label": {
-    "name": "UserSearch Label",
-    "description": "You can choose a name/label for the users that can be searched. Consider co-authors, speakers, or other labels suitable to your form field."
-  },
-  "UserSearch_ManuallyAdded": {
-    "name": "Manually added users",
-    "description": "You can allow users to add users who do not exist in the database. This will not create the user in the database, but instead just store this temporary user-entry in this field only. If you intend to use this field e.g. to convert to speakers, then your administrators must replace each manually created user with a valid user who exists in the database."
+    "description": "Using concise style will compress the layout of the Submission Form and reduce overall spacing.",
+    "name": "Admin Concise Style"
   },
   "AttachmentField_AllowedFiles": {
-    "name": "Permitted file types",
-    "description": "You can restrict which types of files the user can upload and attach to this field."
-  },
-  "AttachmentField_MultipleFiles": {
-    "name": "Multiple attachmens/files",
-    "description": "You can allow the submitter to upload/select multiple files/attachments. You can then restrict how many files/attachments can be selected."
+    "description": "You can restrict which types of files the user can upload and attach to this field.",
+    "name": "Permitted file types"
   },
   "AttachmentField_Filename": {
-    "name": "Customize Filename",
-    "description": "By default, submitters can change the filesnames of the attachments they uploaded/selected. If you disable this then the files/attachments will have the same filename as the file that was uploaded."
+    "description": "By default, submitters can change the filesnames of the attachments they uploaded/selected. If you disable this then the files/attachments will have the same filename as the file that was uploaded.",
+    "name": "Customize Filename"
+  },
+  "AttachmentField_MultipleFiles": {
+    "description": "You can allow the submitter to upload/select multiple files/attachments. You can then restrict how many files/attachments can be selected.",
+    "name": "Multiple attachmens/files"
+  },
+  "AuthorRoles": {
+    "description": "Checking this causes primary authors to be printed with an asterisk(*)",
+    "name": "Print author roles"
+  },
+  "Call_Attribute_Introduction": {
+    "description": "The introduction to a call will appear together with the Call Name on the Call Detail page. Edit this introduction to address all prospective submitters—and include information about the call, guidelines, and submission instructions.",
+    "name": "Call Introduction"
+  },
+  "Call_Attribute_Name": {
+    "description": "This is the name of the call that will be seen by everyone—submitters, reviewers, administrators, and the public.",
+    "name": "Call Name"
+  },
+  "Call_CommitteeSelection": {
+    "description": "The Committe Selection Call has a custom template",
+    "name": "Committe Selection Call"
+  },
+  "Call_Configuration_Communication": {
+    "description": "Updates in the system can trigger notifications to reviewers and submitters. Configure how frequently these notifications should be delivered.",
+    "name": "Communication / Notifications"
+  },
+  "Call_Configuration_HeaderImage": {
+    "description": "Upload a banner image file that you want to appear in your call page. Best dimensions are 4x1 (WxH), e.g. w1600 x h400.",
+    "name": "Header / Banner Image"
+  },
+  "Call_Configuration_ReviewerAllocation": {
+    "description": "This setting controls how submissions that require a review get assigned to a reviewer as a request to review. Configure how reviews are allocated to the reviewer pool. When a new submission arrives, it can either remain unassigned (manual, so that you can manually assign it) or automatically be assigned to one reviewer from the pool, either randomly, to the reviewer with the least number of outstanding reviews (queue) or to the reviewer who our machine learning algorithm determines has the shortest expected review completion time.",
+    "name": "Reviewer Allocation"
+  },
+  "Call_Configuration_ReviewerAllocationPool": {
+    "description": "Select or create group of users among who will be chosen who will be assigned as the reviewer for each new submission. This will be selected according to the Review Allocation mechanism, and is disabled for manual allocation.",
+    "name": "Reviewer Pool"
+  },
+  "Call_Configuration_ReviewerPool": {
+    "description": "Select or create group of users among who will be chosen who will be assigned as the reviewer for each new submission. This will be selected according to the Review Allocation mechanism, and is disabled for manual allocation.",
+    "name": "Reviewer Pool"
+  },
+  "Call_Configuration_ReviewPrivacy": {
+    "description": "To minimize bias, it may be necessary to conceal identity or certain information about the submitter from reviewers. This setting controls the level of privacy",
+    "name": "Review Privacy"
+  },
+  "Call_Configuration_Timezone": {
+    "description": "Choose the time zone of the location for the call. This will ensure the times you specify as deadlines will be enforced in this timezone.",
+    "name": "Call Timezone"
+  },
+  "Call_General": {
+    "description": "A call is a generic term for an invitation to submit content. Usually, content is collected in a Submission Phase and reviewed afterwards in a Review Phase by a group of reviewers.",
+    "name": "Calll"
+  },
+  "Call_Refetch_ServerFields": {
+    "description": "Clicking this button re-fetches all serverfields of all submissions in this call, and updates them to their new value. \n  This change can't be undone",
+    "name": "Re-fetch server fields"
+  },
+  "CallPhases_General": {
+    "description": "As an administrator, you can add submission and review phases to handle submissions to a call. Add at least one submission phase to receive submissions to the call. Also, add at least one review phase for reviewing submissions. Be sure to set the Times for each phase such that no phase overlaps any other. If care isn’t taken to avoid this, then submitters might submit to the wrong phase.",
+    "name": "Call Phases"
+  },
+  "CallPhases_Messaging_Enable": {
+    "description": "Checking this enables inapp messaging between admins, submitters and/or reviewers.",
+    "name": "Enable Inapp Messaging"
+  },
+  "CallPhases_Messaging_Roles": {
+    "description": "Select which user roles are automatically added to a channel as members.",
+    "name": "Add roles to channel"
+  },
+  "CallPhases_PaymentOption": {
+    "description": "Configure to enforce that to make a submission a payment has to be made. Select the payment processor to use (e.g. Impexium, or Stripe) and which product should be used to process the payment.",
+    "name": "Require Payment ot Submit"
+  },
+  "CallPhases_PhaseDependencies": {
+    "description": "Phases in a template follow a certain structure. There can be an arbitrary number of submission phases, and each submission phase can have review phases that depend on it.",
+    "name": "Phase Dependencies"
+  },
+  "CallPhases_ReviewForm": {
+    "description": "Create the form for this review phase. Add sections to the form and configure each section with fields, options and other features.",
+    "name": "Review Form"
+  },
+  "CallPhases_Reviews": {
+    "description": "During a review phase submissions can be reviewed. You can configure the review criteria, set up automatic assignment, as well as timelines and communication. Multiple review phases can overlap. A review phase always belongs to a submission phase and only submissions from that submission phase can be reviewed in the review phase.",
+    "name": "Review Phase"
+  },
+  "CallPhases_ReviewSettings_AlwaysBCC": {
+    "description": "Check this box to blind/bcc-copy specific e-mail addresses for any event happening in this phase. In the field, separate each email address with a comma. Whoever receives the original notification will not know that these email addresses also received the notification.",
+    "name": "Email Blind Copy"
+  },
+  "CallPhases_ReviewSettings_EventCommunication": {
+    "description": "Updates in the system can trigger notifications to administrators, reviewers, and submitters. The administrator can configure the frequency of these notifications.",
+    "name": "Event Communication / Notifications"
+  },
+  "CallPhases_ReviewSettings_Group": {
+    "description": "Set the access restrictions for types of users who can review submissions in this phase.",
+    "name": "Reviewer Group"
+  },
+  "CallPhases_SubmissionForm": {
+    "description": "Create the form for this submission phase. Add sections to the form and configure each section with fields, options and other features.",
+    "name": "Submission Form"
+  },
+  "CallPhases_Submissions": {
+    "description": "During a submission phase submitters can submit. You can configure the submission form, timelines, restrictions, communication and more. No two submission phases can overlap.",
+    "name": "Submission Phase"
+  },
+  "CallPhases_SubmissionSettings_AllowWithdrawal": {
+    "description": "Indicate here whether you will accept the withdrawal of a submission. The setting you choose here applies to all submitters to this phase.",
+    "name": "Allow Submission Withdrawal"
+  },
+  "CallPhases_SubmissionSettings_AlwaysBCC": {
+    "description": "Check this box to blind/bcc-copy specific e-mail addresses for any event happening in this phase. In the field, separate each email address with a comma. Whoever receives the original notification will not know that these email addresses also received the notification.",
+    "name": "Email Blind Copy"
+  },
+  "CallPhases_SubmissionSettings_EditSubmissions": {
+    "description": "Enable editing of all submissions in this call. Submission edit period can be limited by setting a deadline. ",
+    "name": "Submission Edit"
+  },
+  "CallPhases_SubmissionSettings_EventCommunication": {
+    "description": "Configure which notifications will be sent and configure the email template for each using mail-merge placeholders. You can also BCC someone or set up a direct chat between parties.",
+    "name": "Communication Settings"
+  },
+  "CallPhases_SubmissionSettings_Group": {
+    "description": "Set the access restrictions for types of users who can submit into this phase. A variety of different types of restrictions are available.",
+    "name": "Who can submit?"
+  },
+  "CallPhases_SubmissionSettings_MaxSubmissions": {
+    "description": "Set the maximum number of submissions that you will allow for a single submitter.",
+    "name": "Maximum Number of Submissions per Submitter"
+  },
+  "CallPhases_SubmissionSettings_NameGeneration": {
+    "description": " Specify the scheme for identifying each submission to this phase. Choose from running numbers, colors, a random number, or the contents of a field in the submission form.",
+    "name": "Submission Name"
+  },
+  "CallPhases_SubmissionSettings_Restrictions_Product": {
+    "description": "Set up to only allow submissions from Impexium users who have purchased a certain product by entering the product code (!). Select whether one purchase is enough or if one per submission is required. Using the advanced configuration you can also set up itemized custom field matching on the purchases in Impexium.",
+    "name": "Submitter must have purchased"
+  },
+  "CallPhases_SubmissionSettings_Restrictions_RegularExpression": {
+    "description": "Use a regular expression to describe a restriction on a property. Learn how to build regular expressions using e.g. https://regexone.com",
+    "name": "Regular Expression"
+  },
+  "CallPhases_Times": {
+    "description": "Set the start and end date of this phase. If you are establishing multiple phases, ensure that that there are no two submission phases that have overlapping dates (review phases may overlap)",
+    "name": "Times"
+  },
+  "CallSettings_Submission_Library_DetailFields": {
+    "description": "Select field(s) whose values will be displayed in submission library.",
+    "name": "Library Submission Detail"
+  },
+  "CallSettings_Submission_Library_Phases": {
+    "description": "Select a phase from which submissions will be added to the library",
+    "name": "Library Source phase"
+  },
+  "CallSettings_Submission_Library_SearchFields": {
+    "description": "Select field(s) that users can search submissions by.",
+    "name": "Library Search Fields"
+  },
+  "CallSettings_Submission_Library_TitleField": {
+    "description": "Select a field that will be set as the submission's title in the submission library.",
+    "name": "Library Submission Title"
+  },
+  "CallSettings_Voting_Deadline": {
+    "description": "Set a deadline until when votes will be accepted.",
+    "name": "Deadline"
+  },
+  "CallSettings_Voting_DetailFields": {
+    "description": "Control which fields of the submission will be shown to the voter.",
+    "name": "Detail Fields"
+  },
+  "CallSettings_Voting_Limit": {
+    "description": "Set how many votes each user can cast.",
+    "name": "Voting Limit"
+  },
+  "CallSettings_Voting_Mechanism": {
+    "description": "Select what type of vote to collect.",
+    "name": "Voting Mechanism"
+  },
+  "CallSettings_Voting_Restrictions": {
+    "description": "Add restrictions to allow only matching users to cast a vote. By default every registered user is allowed to vote.",
+    "name": "Voting Restrictions"
+  },
+  "CallSettings_Voting_SourcePhase": {
+    "description": "Select the phase where the submissions were collected that you'd like to collect votes for.",
+    "name": "Source Phase"
+  },
+  "CallSettings_Voting_TitleField": {
+    "description": "Select what submitters see as the title of the item vote for. The title will be displayed on the list, but voters can still open each submission to see the list of visible fields",
+    "name": "Title Field"
+  },
+  "Competition_CloselyScheduledCompetitors": {
+    "description": "Below are listed all competitors across all non-closed competitions whose assigned performance timeslot has a difference to another performance-timeslot of its duration or less.",
+    "name": "Closely Scheduled Competitors"
+  },
+  "Component_DatePicker": {
+    "description": "Pick a date by navigating back and forth and clicking on the date of choice. You can also directly enter the date using your keyboard - Simply type the date in the format 'MMM D, YYY', e.g. Apr 4, 1985. See below:\n[img height=447 width=561]http://support-static.slayte.com/component-datepicker-format.gif[/img]",
+    "name": "Date Picker"
+  },
+  "Component_DateRangePicker": {
+    "description": "Pick two dates, begin- and end-date, by navigating back and forth and clicking on the dates of choice. You can also directly enter the dates using your keyboard - Simply type the date in the format 'MMM D, YYY', e.g. Sep 1, 1985. See below:\n[img height=451 width=564]http://support-static.slayte.com/component-daterangepicker-format.gif[/img]",
+    "name": "Date Range Picker"
+  },
+  "Component_DateTimePicker": {
+    "description": "Use the date picker to select a date, and consider selecting a time by clicking on the text displaying the time.",
+    "name": "Date Picker"
+  },
+  "EducationProgram_Action_ActionType": {
+    "description": "Specify the action type that will be performed once a claim is submitted.",
+    "name": "Action Type"
+  },
+  "EducationProgram_AdminNotificationEmails": {
+    "description": "List of emails to be emailed about all notifications in this program.",
+    "name": "Admin Notification Emails"
+  },
+  "EducationProgram_BeginDate": {
+    "description": "Set the start date from which the users should be permitted to claim.",
+    "name": "Program Begin Date"
+  },
+  "EducationProgram_Category": {
+    "description": "Assign a category to the program. The category is important since it can be used to filter programs and also groups the programs for the claimer.",
+    "name": "Program Category"
+  },
+  "EducationProgram_ClaimLabel": {
+    "description": "The text set here will be displayed on the claim button.",
+    "name": "Claim Button Label"
+  },
+  "EducationProgram_Copy_Program": {
+    "description": "Make a copy of this program. General feedback and Speaker feedback templates will be copied(not linked). Only Program related restrictions will be copied as well. NOTE: No claimable items will be copied. ",
+    "name": "Copy Program"
+  },
+  "EducationProgram_Delete": {
+    "description": "Deleting a program is an irreversible action and will remove the program and all related data.",
+    "name": "Delete Program"
+  },
+  "EducationProgram_Description": {
+    "description": "Add the description that will be displayed to the claimer.",
+    "name": "Program Description"
+  },
+  "EducationProgram_EndDate": {
+    "description": "Set the end date till which the users will be permitted to claim.",
+    "name": "Program End Date"
+  },
+  "EducationProgram_ExternalId": {
+    "description": "Unique identifier for the event on Impexium. Required for validating access restrictions on Program and Claim Items.",
+    "name": "Program ExternalId"
+  },
+  "EducationProgram_FeedbackTemplate": {
+    "description": "Set the feedback template the user has to fill out in order to complete their claim.",
+    "name": "Feedback Template"
+  },
+  "EducationProgram_Filtering": {
+    "description": "Specify criteria on which programs will be shown.",
+    "name": "Filtering Programs"
+  },
+  "EducationProgram_Item_Credit_Provider": {
+    "description": "Select a provider and the amount of credits that can be claimed.",
+    "name": "Provider"
+  },
+  "EducationProgram_Item_Credits": {
+    "description": "The list of credits that can be claimed from this item.",
+    "name": "Credits"
+  },
+  "EducationProgram_Item_Description": {
+    "description": "Provide a description of the Program Item.",
+    "name": "Description"
+  },
+  "EducationProgram_Item_ExternalID": {
+    "description": "An item's external ID is used to connect it to an external item, so that additional validations can be run linked to the external item, e.g. an Impexium session that must be attended by the claimer.",
+    "name": "External ID"
+  },
+  "EducationProgram_Item_Name": {
+    "description": "Specify the name of the Program Item.",
+    "name": "Name"
+  },
+  "EducationProgram_Item_Ratables": {
+    "description": "The list of ratables for which the claiming user can provide a rating.",
+    "name": "Ratables"
+  },
+  "EducationProgram_Item_Users": {
+    "description": "The list of users for which the claiming user has to fill out the users template in order to complete the claim.",
+    "name": "Users"
+  },
+  "EducationProgram_Item_VerificationTemplate": {
+    "description": "Set the template which has to be filled out by the user who is attempting to claim this item, to verify their attendance.",
+    "name": "Verification Template"
+  },
+  "EducationProgram_ItemLabel": {
+    "description": "This label will be used to refer to the items list wherever it's being rendered.",
+    "name": "Item Label"
+  },
+  "EducationProgram_Name": {
+    "description": "Choose a name by which this program will be identified.",
+    "name": "Program Name"
+  },
+  "EducationProgram_ProviderCertificateOverrides": {
+    "description": "Override the default certificate template for provider(s) in this program.",
+    "name": "Provider Certificate Overrides"
+  },
+  "EducationProgram_RatablesLabel": {
+    "description": "This label will be used to refer to the ratables list wherever it's being displayed.",
+    "name": "Ratables Label"
+  },
+  "EducationProgram_RatablesScale": {
+    "description": "All ratables can have a value from and to the selected values here.",
+    "name": "Ratables Scale"
+  },
+  "EducationProgram_SpeakerTemplate": {
+    "description": "Set the users template the claiming user has to fill out for each user in the users list in order to complete their claim.",
+    "name": "Speaker Template"
+  },
+  "EducationProgram_Status": {
+    "description": "Describes the status of the program.",
+    "name": "Status"
+  },
+  "EducationProgram_Status_Actions": {
+    "description": "Status actions can be performed to change the status of the program.",
+    "name": "Status Actions"
+  },
+  "EducationProgram_Status_Activate": {
+    "description": "Once a program has been actived the users can make claims(Additionally for the claimer to be able to claim the begin and end date must be set correct and the user must pass the restrictions).",
+    "name": "Activate Claiming"
+  },
+  "EducationProgram_Status_Archive": {
+    "description": "Archive a program it's not being used frequently and might be deleted in the future(After archiving delete option is enabled).",
+    "name": "Archive Program"
+  },
+  "EducationProgram_Status_Pause": {
+    "description": "When a program is paused then claiming is disabled.",
+    "name": "Pause Claiming"
+  },
+  "EducationProgram_Status_Unarchive": {
+    "description": "Unarchiving a program returns it in a paused state where claiming hasn't been enabled(This action can be reverted).",
+    "name": "Unarchive Program"
+  },
+  "EducationProgram_SubmitActions": {
+    "description": "Submit Actions can be used to perform some external action once a claim is submitted (e.g we can configure a submit action to grant credits in Impexium once a claim is submitted).",
+    "name": "Submit Actions"
+  },
+  "EducationProgram_SubmitBehavior": {
+    "description": "Defines when the claims will be submited. Either immediately after claiming or by manually clicking on submit claims.",
+    "name": "Submit Behavior"
+  },
+  "EducationProgram_Type": {
+    "description": "A program can be of type custom or of type session. If the type is session then this program has been generated using sessions in event.",
+    "name": "Program Type"
+  },
+  "EducationProgram_UseRatables": {
+    "description": "Enabling this will allow us to add a list of ratables which the claiming user would have to fill out in order to complete their claim.",
+    "name": "Use Ratables"
+  },
+  "EducationProgram_UserRestrictions": {
+    "description": "Specify restrictions for which users are allowed to claim from this program and it's associated claim items.",
+    "name": "User Restrictions"
+  },
+  "EducationProgram_UsersLabel": {
+    "description": "This label will be used to refer to the users list wherever it's being displayed.",
+    "name": "Users Label"
+  },
+  "EducationProgram_UseUsers": {
+    "description": "Enabling this will allow us to add a list of users and a template which the claiming user would have to fill out for each of these users in order to complete their claim.",
+    "name": "Use Users"
+  },
+  "EducationProgram_UseVerification": {
+    "description": "Enabling this will allow us to add a template which the claiming user would have to fill out with the correct answers in order to complete their claim.",
+    "name": "Use Verification"
+  },
+  "EducationProgram_VerificationLinkedSessionAttended": {
+    "description": "Set up that it is required for the claimer to have attended the linked session in the Event. You can set up automatic attendance verification in the linked Event itself on each session (linked to this Education Item) and control the attendance record for each attendee under 'Attendees' when the event is live.",
+    "name": "Claimer Attendance Verification"
+  },
+  "EducationProgram_VerificationMaxAttempts": {
+    "description": "Specifies the maximum number of attempts the user has to provide the correct answers for the verification template.",
+    "name": "Verification Max Attempts"
+  },
+  "EducationProgram_VerificationOwnItem": {
+    "description": "You can require that no speaker can claim any item/session where they are speaking",
+    "name": "Speakers cannot claim their own"
+  },
+  "EducationProgram_VerificationPassingScore": {
+    "description": "Set the percentage of correct answers the user has to provide for the verification template in order to claim.",
+    "name": "Verification Passing Score"
+  },
+  "EducationProgram_VerificationTemplate": {
+    "description": "Configure the form that must be completed to claim. You can configure scores for different options and tie this together with the correct answers, and set a passing score percentage in case you would like to only allow claiming when that certain percentage of the form has been answered correctly by the claimer.",
+    "name": "Verification Form / Template"
+  },
+  "EducationProvider_CertificateTemplate": {
+    "description": "Specify the certificate template for the provider.",
+    "name": "CertificateTemplate"
+  },
+  "EducationProvider_CreditName": {
+    "description": "Specify the provider credit name.",
+    "name": "CreditName"
+  },
+  "EducationProvider_Name": {
+    "description": "Specify the provider name.",
+    "name": "Name"
+  },
+  "EducationProvider_PreferredCredits": {
+    "description": "Select those credits that you would like to see. Note: Once at least one credit is selected, only programs that offer those selected credits will be shown.",
+    "name": "Preferred Credits"
+  },
+  "EducationProvider_ProfileField_FieldName": {
+    "description": "Specify the profile field name. This is the field name the claimer will see when filling out their provider profile.",
+    "name": "EducationProvider_FieldName"
+  },
+  "EducationProvider_ProfileField_PlaceholderName": {
+    "description": "Specify the profile field placeholder name. This is the placeholder you will have to use in the certificate template.",
+    "name": "PlaceholderName"
+  },
+  "EducationProvider_ProfileField_Required": {
+    "description": "Indicate this field as required in the certificate template. Claimers will not be able to generate their certificicate until they provide this value.",
+    "name": "Required Profile Field"
+  },
+  "EducationProvider_ProfileFields": {
+    "description": "The list of profile fields for this provider that the user has to fill out in order to submit their claims.",
+    "name": "ProfileFields"
+  },
+  "Event_Company_Session_Video_Link": {
+    "description": "You can add a video to an ad and assign this to a session such that it plays when attendees join. If you add multiple ads with video to a session, one will randomly be picked and played when an attendee views the session.",
+    "name": "Ad Video"
+  },
+  "Event_Template_Selection_Mode": {
+    "description": "Choose a template selection mode. 'Copy' makes a new copy of the selected template (any edits made to the copied template will not reflect on the original), 'Link' will reuse a previously made template (any changes made to the template will be reflected in all other events using the template as well).",
+    "name": "Template Selection Mode"
+  },
+  "FormEditor_FieldIsPrivateReview": {
+    "description": "The value captured from the submitter will not be displayed to the reviewer if this option is checked.",
+    "name": "Invisible field during review"
+  },
+  "FormEditor_FieldIsPrivateReviewBlind": {
+    "description": "The value captured from the submitter will not be displayed to the reviewer if this option is checked, AND the review settings are set to Blind Review.",
+    "name": "Invisible field during blind review"
+  },
+  "FormEditor_FieldIsPrivateSubmission": {
+    "description": "Use this option to indicate that a certain field is invisible to the user filling out the form.",
+    "name": "Invisible field to submitter"
+  },
+  "FormEditor_FieldName": {
+    "description": "The label that will be displayed on each field.",
+    "name": "Field Label"
+  },
+  "FormEditor_FieldOptional": {
+    "description": "The field is not required to be filled out.",
+    "name": "Optional Field"
+  },
+  "FormEditor_FieldRandomizeOptions": {
+    "description": "You can configure that the options will be randomized when presented to the Submitter. This can be useful to reduce bias based on order of the answers, e.g. if you expect submitters to always choose the first/last option then randomizing can help reduce statistical correlation based on position.",
+    "name": "Randomize Options"
+  },
+  "FormEditor_Fields": {
+    "description": "A field is what the user who fills out the form will fill in, e.g. a text field. Each field has a name and several options, some of which are related to the field-type, others are generic (e.g. whether the field is optional)",
+    "name": "Form Field"
+  },
+  "FormEditor_FieldSkipLogic": {
+    "description": "Mark certain fields on the form as only visible/required if selected options of the Skip Logic Field are chosen. E.g. a dropdown for “category” could mark follow-up questions to each category as only required if the respective category was selected first and hide the irrelevant follow-up questions otherwise.",
+    "name": "Skip Logic"
+  },
+  "FormEditor_Forms": {
+    "description": "Create forms to be used in the template.",
+    "name": "Forms"
+  },
+  "FormEditor_limited": {
+    "description": "Submissions have been recieved for this form, you can only change the labels of the fields and static text",
+    "name": "FormEditor limited editing"
+  },
+  "FormEditor_SectionName": {
+    "description": "name that will be rendered at the top of each section.",
+    "name": "Form Section name"
+  },
+  "FormEditor_Sections": {
+    "description": "A section is a visual distinction between fields and has a name that will be rendered at the beginning of the section.",
+    "name": "Form Section"
+  },
+  "Grant_CopyTemplates": {
+    "description": "Not copying the templates will link the copy to the original - Changing forms in the copy will modify the original, and vice versa. We recommend you disconnect the copy from the original (by copying the templates), but if you'd like to keep the templates linked up, uncheck the \"Copy templates\" box.",
+    "name": "Copy the templates of the grant"
+  },
+  "Grant_EventTemplate": {
+    "description": "Configure the default events to be created for an awardee. When marked as \"active\" Slayte will create all those events configured here on that awardee's profile, in reference to the information provided when marked active (such as payment amount, sponsoring duration etc.).\nNote: To specify each payment template-event individually the option \"Specify each payment\" needs to be enabled. Otherwise, the payment events will be created all-in-one when the awardee is marked active depending on your configuration then.",
+    "name": "Event Template"
+  },
+  "Grant_Message_Template_AlwaysBCC": {
+    "description": "Check this box to blind/bcc-copy specific e-mail addresses for any event happening in this grant. In the field, separate each email address with a comma. Whoever receives the original notification will not know that these email addresses also received the notification.",
+    "name": "Email Blind Copy"
+  },
+  "Grant_SpecifyEachPayment": {
+    "description": "By default, Slayte creates and calculates the amount of each payment based on duration and amount which you enter when accepting an awardee.\nIf you'd like more control, select \"Specify each payment\" -  Then you create exactly the template with payment-events for an awardee, and when accepting the awardee we compute the value of each payment event created by you (also based on sponsoring amount and duration). You may add template payment events with percentage- or total-amount which will turn into those calculated payment-events on the awardee profile when accepted.",
+    "name": "Specify Each Payment"
   },
   "Impexium_ProfileCustom": {
-    "name": "Impexium Profile Custom Field",
     "description": "You can choose any custom field to be pulled into the form. Use the 'Field Name' as listed under the 'Customizations' > 'Custom Forms' > 'Custom Fields' listing in Impexium",
+    "name": "Impexium Profile Custom Field"
+  },
+  "Jobs_Introduction": {
+    "description": "Jobs are an advanced feature that allow monitoring and controlling long-running tasks. Contact support for further details.",
+    "name": "Jobs"
+  },
+  "Mail_Content": {
+    "description": "Enter the main content of the message in the rich-text editor.",
+    "name": "Content"
+  },
+  "Mail_EventTypes": {
+    "description": "Some events are configurable to send a notification message when the event occurs. Choose which event applies to this message template.",
+    "name": "Notification Events"
+  },
+  "Mail_Introduction": {
+    "description": "Use Message Templates to build custom and re-usable messages with mail-merge placeholders. Each Message Template is built for a specific type of event, e.g. \"Submission Received\", which sets the available placeholders.",
+    "name": "Mail Introduction"
+  },
+  "Mail_Placeholders": {
+    "description": "Define custom content for any of notifications that are sent for the event type chosen in the drop-down. These placeholders help you to mention specific aspects of the event, call, organization, submission, or recipient name (reviewer name).",
+    "name": "Placeholders"
+  },
+  "Mail_Subject": {
+    "description": "Much like the subject of an email message. Enter the subject of the notification that will be sent to the recipient.",
+    "name": "Subject"
+  },
+  "MentionInput": {
+    "description": "Compose a template with placeholders that will be replaced later. Type regular text and press @ to open the list of placeholders, continue typing to narrow down your search for a placeholder. Press TAB or ENTER to select",
+    "name": "Placeholder Input"
+  },
+  "Query_CustomView": {
+    "description": "Customize a view to suit your needs and customize both the filters and the result fields. Custom views can be saved, shared and exported.",
+    "name": "Custom View"
+  },
+  "Query_Default": {
+    "description": "Mark a custom view as default for a call to automatically load it when viewing the list of submission in the call.",
+    "name": "Default View"
+  },
+  "Query_Export": {
+    "description": "You may “Export” or “Export All” the submissions you are currently viewing (including the Filter Criteria and Result Fields as configured in the Custom View). Export All allows a seamless export if there are more than 50 submissions.",
+    "name": "Exporting"
+  },
+  "Query_FilterCriteria": {
+    "description": "Add filters to your query, that limit the results it retrieves to only include those who match. Choose from all fields in the submission form, review form, and a variety of system provided fields such as “Review Score” and “Tags”.",
+    "name": "Filter Criteria"
+  },
+  "Query_LoadView": {
+    "description": "Save a custom view so that you can later load it again. Use this feature to maintain a variety of different views and load them when required.",
+    "name": "Saving and Loading a Custom View"
+  },
+  "Query_ResultFields": {
+    "description": "Customize which columns will be displayed and included in the export. Choose from all fields in the submission form, review form, and a variety of system provided fields such as “Review Score” and “Tags”.",
+    "name": "Result Fields"
+  },
+  "Query_Share": {
+    "description": "A custom view can be shared with your colleagues. Upon sharing, they will find the view in the 'Load View' list.",
+    "name": "Sharing a Custom View"
+  },
+  "QueryConfiguration_Default": {
+    "description": "You can select a view to be the default that loads when the Submissions table is loaded. This is useful to help your team start with a single most useful view on your data.",
+    "name": "Default View"
+  },
+  "QueryConfiguration_Sharing": {
+    "description": "Share views with your team to let them see the submissions the same way you view it. This helps streamline work shared with your colleagues.",
+    "name": "Share Views"
+  },
+  "Report_Group_Default": {
+    "description": "Mark a custom report as default for a call to automatically load it when viewing the list of reports in the call.",
+    "name": "Default Report"
+  },
+  "Report_Sharing": {
+    "description": "A custom report can be shared with your colleagues. Upon sharing, they will find the report in the 'Load Report' list.",
+    "name": "Sharing a Custom Report"
+  },
+  "Review_Assignment": {
+    "description": "On each submission, or in bulk, configure who is assigned to review a submission. Search the user database to find the reviewer. You can remove an existing reviewer who hasn’t completed their assignment.",
+    "name": "Modify Submission Reviewer"
+  },
+  "Review_CannotReviewRightNow": {
+    "description": "At this point there is no review required from you - Please ensure you are accessing the correct submission to review, and that the review phase is currently active.",
+    "name": "No Review Required"
+  },
+  "Session_View_Default": {
+    "description": "You can make this view the default when loading the table. This helps give your team one unified view of the data. You can always load/save other views, as well.",
+    "name": "Default View"
+  },
+  "StatusMessage_Call_Not_Found": {
+    "description": "You tried to access a call that is not available. This might be due to several possible reasons: 1) Wrong Link, check the URL. 2) Closed, the administrators have closed the program. Consider getting in touch wiht the organizer to help get access to this call.",
+    "name": "Call Not Found"
+  },
+  "StatusMessage_PageNotFound404": {
+    "description": "The page you requested to view doesn't exist, or has been moved or deleted. Double-check the link/url and try again.",
+    "name": "Not Found"
+  },
+  "StatusMessage_Review_Error": {
+    "description": "Our servers weren't able to obtain the requested review. This is most likely to be an error in our servers, and we recommend you get in touch with support.",
+    "name": "Review Error"
+  },
+  "StatusMessage_Review_Not_Found": {
+    "description": "We could not find the review you are trying to view. Double-check the link/url and try again.",
+    "name": "Review Not Found"
+  },
+  "StatusMessage_Submission_Not_Found": {
+    "description": "We could not find the submission you are trying to view. Double-check the link/url and try again.",
+    "name": "Submission Not Found"
+  },
+  "Submission_BulkActions": {
+    "description": "Select multiple submissions to apply certain actions to all selected. You may choose to tag, accept/reject or modify the review assignment or call phase. In addition the following actions are available only as bulk-actions: Sending a message to selected submission authors, and importing reviews; In an environment where no stable internet connection is available, reviews may be conducted offline. You can generate a template, take this in Excel and fill out offline, then import it later to apply the reviews.",
+    "name": "Bulk Actions"
+  },
+  "Submission_Message_To_Submitter": {
+    "description": "Select the users you would like to send a bulk message to. In the dialog you can configure subject and message body to be sent.",
+    "name": "Bulk Message to Submitters"
+  },
+  "Submission_Phase": {
+    "description": "In a configuration where multiple review phases overlap, the admin controls in which phase a submission is. To trigger e.g. a “Senior Review”, the admin moves the submission to the “Senior Review” phase.",
+    "name": "Manage call phase"
+  },
+  "Submission_ReviewImport": {
+    "description": "In an environment where no stable internet connection is available, reviews may be conducted offline. You can generate a template, take this in Excel and fill out offline, then import it later to apply the reviews.",
+    "name": "Importing Reviews"
+  },
+  "Submission_Status": {
+    "description": "Submissions have states: Open (default), Accepted and Rejected. These are not visible to the submitter or reviewer and trigger no notifications in the system. They can be changed back to Open or otherwise at any time. You may filter for the status.",
+    "name": "Accept/Reject Submission"
+  },
+  "Submission_Tags": {
+    "description": "Tags are categories you can assign to submissions, either in bulk or individually. No need to define which categories you need, simply create a new tag on the fly. Fully utilize the power of tags by building custom views to filter for only certain tags.",
+    "name": "Tagging Submissions"
+  },
+  "SubmissionNotAllowed": {
+    "description": "You cannot make a submission to this call at this time. The administrator has configured that only certain accounts are able to submit during certain times. It appears the account you're submitting from doesn't meet those criteria. We recommend you get in touch with the call administrator directly if further clarification is required.",
+    "name": "Cannot submit right now"
+  },
+  "SubscribeCalendar": {
+    "description": "On this tab you can additionally export your appointment data into an external calendar e.g. Google/Outlook Calendar or even on your phone. To do this:\n\n\nOn the top-left corner of this page click Subscribe Calendar.\nCopy the URL link displayed.\nIn an external calendar of your choice (e.g. Google Calendar) find the option to Add a New Calendar using URL.\nPaste your copied URL from Slayte into this space provided to paste a new calendar URL.\nSave changes.",
+    "name": "How to subscribe to your appointments "
+  },
+  "SuperAdmin_PolicySetting": {
+    "description": "When a user logs in and they have not previously approved a policy you created, then they will be prompted to do so. Use this for privacy/terms or dealing with Cookies and GDPR.",
+    "name": "Policy setting"
+  },
+  "UserGroups_General": {
+    "description": "Users in the system can be grouped, and those groups can be given a name. When configuring a call, you can search through user groups and find the group that you created as the reviewer group for that particular call, or add a restriction to only allow submissions from such a group.",
+    "name": "User Groups"
+  },
+  "UserSearch_EmailLeak": {
+    "description": "You can allow users to search by email address. Be aware that this exposes the e-mail addresses of your users",
+    "name": "UserSearch Email Search"
+  },
+  "UserSearch_Label": {
+    "description": "You can choose a name/label for the users that can be searched. Consider co-authors, speakers, or other labels suitable to your form field.",
+    "name": "UserSearch Label"
+  },
+  "UserSearch_ManuallyAdded": {
+    "description": "You can allow users to add users who do not exist in the database. This will not create the user in the database, but instead just store this temporary user-entry in this field only. If you intend to use this field e.g. to convert to speakers, then your administrators must replace each manually created user with a valid user who exists in the database.",
+    "name": "Manually added users"
   }
 }
