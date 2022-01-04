@@ -4,8 +4,8 @@
     "name": "Admin Concise Style"
   },
   "AttachmentField_AllowedFiles": {
-    "description": "You can restrict which types of files the user can upload and attach to this field.",
-    "name": "Permitted file types"
+    "description": "You can restrict which types of files the user can upload and attach to this field. By default (if restricted is left empty) all file-types can be uploaded/attached",
+    "name": "Restrict the allowed file types"
   },
   "AttachmentField_Filename": {
     "description": "By default, submitters can change the filesnames of the attachments they uploaded/selected. If you disable this then the files/attachments will have the same filename as the file that was uploaded.",
