@@ -67,6 +67,10 @@
     "description": "Checking this enables inapp messaging between admins, submitters and/or reviewers.",
     "name": "Enable Inapp Messaging"
   },
+  "Event_EditorsForAdminGroups": {
+    "description": "Create editor groups and assign users to give specific control. [Read more here](https://docs-for-customers.slayte.com/hc/en-us/articles/5763418956051).",
+    "name": "Editors"
+  },
   "CallPhases_Messaging_Roles": {
     "description": "Select which user roles are automatically added to a channel as members.",
     "name": "Add roles to channel"
